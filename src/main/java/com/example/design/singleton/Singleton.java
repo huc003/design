@@ -35,7 +35,7 @@ public class Singleton {
         if (synSingleton == null) {
             synSingleton = new Singleton();
         }
-        return synSingleton;
+        return singleton;
     }
 
 }

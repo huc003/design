@@ -17,11 +17,13 @@ public class Meal {
     }
 
     public float getCost(){
-        float cost = 0f;
-        for (Item item : items) {
-            cost+=item.price();
-        }
-        return cost;
+        final float[] cost = {0f};
+        items.forEach(item -> {
+            cost[0] +=item.price();
+        });
+
+
+        return cost[0];
     }
 
     public void showItems(){
