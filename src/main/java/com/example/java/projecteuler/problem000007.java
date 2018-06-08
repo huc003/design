@@ -25,6 +25,7 @@ public class problem000007 {
                 n++;
                 if(n==10001){
                     System.out.println(i);
+                    break;
                 }
             }
             i++;
