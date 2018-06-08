@@ -16,12 +16,12 @@ public class problem000003 {
         getResult(600851475143L);
     }
 
-    public static void getResult(long parameter){
+    public static void getResult(long parameter) {
         long max = 0;
         for (int i = 2; i <= parameter; i++) {
-            if(parameter%i==0){
-                parameter = parameter/i;
-                if(i>max){
+            if (parameter % i == 0) {
+                parameter = parameter / i;
+                if (i > max) {
                     max = i;
                 }
             }

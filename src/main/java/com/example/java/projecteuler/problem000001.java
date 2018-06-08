@@ -23,6 +23,6 @@ public class problem000001 {
                 sum = sum + i;
             }
         }
-        System.out.println("结果 --> "+sum);
+        System.out.println("结果 --> " + sum);
     }
 }

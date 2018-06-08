@@ -16,29 +16,29 @@ public class problem000004 {
         getResult();
     }
 
-    public static void getResult(){
+    public static void getResult() {
         int max = 0;
         for (int i = 100; i <= 999; i++) {
             for (int j = 100; j < 999; j++) {
-                int a = j*i;
-                if(!number(a+"")){
+                int a = j * i;
+                if (!number(a + "")) {
                     continue;
                 }
-                if(max<a){
+                if (max < a) {
                     max = a;
                 }
             }
         }
-        System.out.println("最大回文数："+max);
+        System.out.println("最大回文数：" + max);
     }
 
-    public static boolean number(String number){
+    public static boolean number(String number) {
         char[] c = number.toCharArray();
         String inverted = "";
-        for (int i = c.length-1; i >= 0; i--) {
-            inverted+=c[i];
+        for (int i = c.length - 1; i >= 0; i--) {
+            inverted += c[i];
         }
-        if(number.equals(inverted)){
+        if (number.equals(inverted)) {
             return true;
         }
         return false;

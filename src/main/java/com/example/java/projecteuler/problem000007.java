@@ -14,16 +14,17 @@ public class problem000007 {
     public static void main(String[] args) {
         getResult();
     }
-    public static void getResult(){
-        int j,n = 0,i = 2;
-        for (;;) {
+
+    public static void getResult() {
+        int j, n = 0, i = 2;
+        for (; ; ) {
             j = 2;
             while (i % j != 0) {
                 j++;
             }
             if (j == i) {
                 n++;
-                if(n==10001){
+                if (n == 10001) {
                     System.out.println(i);
                     break;
                 }

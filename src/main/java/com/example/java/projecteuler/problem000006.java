@@ -15,18 +15,19 @@ package com.example.java.projecteuler;
  * 因此前十个正整数的和的平方，与前十个正数整数的平方和，的差是2640。
  * 现在请你求出前一百个正整数的和的平方与前一百个正整数的平方和的差。
  * 思路：平方和1*1+2*2....+10*10 = 385
- *      和平方(1+2+3.......+10)*(1+2+3.......+10) = 3025
+ * 和平方(1+2+3.......+10)*(1+2+3.......+10) = 3025
  **/
 public class problem000006 {
     public static void main(String[] args) {
         getResult();
     }
-    public static void getResult(){
-        int square = 0,sum = 0;
+
+    public static void getResult() {
+        int square = 0, sum = 0;
         for (int i = 1; i <= 100; i++) {
-            square+=i*i;
-            sum+=i;
+            square += i * i;
+            sum += i;
         }
-        System.out.println(sum*sum-square);
+        System.out.println(sum * sum - square);
     }
 }
