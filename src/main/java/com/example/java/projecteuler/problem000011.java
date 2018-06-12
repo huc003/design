@@ -82,7 +82,6 @@ public class problem000011 {
                         max = th;
                     }
                 }
-
             }
         }
         System.out.println(max);
